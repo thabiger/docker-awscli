@@ -3,7 +3,7 @@ executors:
   docker-publisher:
     environment:
       IMAGE_NAME: thabiger/docker-awscli
-      IMAGE_TAG: ${CIRCLE_TAG}
+      IMAGE_TAG: $CIRCLE_TAG
     docker:
       - image: circleci/buildpack-deps:stretch
 jobs:
